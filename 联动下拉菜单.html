@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>联动下拉菜单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/联动下拉菜单/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/联动下拉菜单/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u216" class="ax_default label">
+        <img id="u216_img" class="img " src="images/联动下拉菜单/u216.png"/>
+        <div id="u216_text" class="text ">
+          <p><span>一级菜单：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u217" class="ax_default label">
+        <img id="u217_img" class="img " src="images/联动下拉菜单/u216.png"/>
+        <div id="u217_text" class="text ">
+          <p><span>二级菜单：</span></p>
+        </div>
+      </div>
+
+      <!-- 一级菜单 (下拉列表框) -->
+      <div id="u218" class="ax_default droplist" data-label="一级菜单">
+        <select id="u218_input">
+          <option value="全部">全部</option>
+          <option value="产品">产品</option>
+          <option value="开发">开发</option>
+          <option value="测试">测试</option>
+        </select>
+      </div>
+
+      <!-- 二级菜单 (动态面板) -->
+      <div id="u219" class="ax_default" data-label="二级菜单">
+        <div id="u219_state0" class="panel_state" data-label="全部" style="">
+          <div id="u219_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (下拉列表框) -->
+            <div id="u220" class="ax_default droplist">
+              <select id="u220_input">
+                <option value="全部">全部</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="u219_state1" class="panel_state" data-label="产品" style="visibility: hidden;">
+          <div id="u219_state1_content" class="panel_state_content">
+
+            <!-- Unnamed (下拉列表框) -->
+            <div id="u221" class="ax_default droplist">
+              <select id="u221_input">
+                <option value="产品经理">产品经理</option>
+                <option value="交互设计">交互设计</option>
+                <option value="产品助理">产品助理</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="u219_state2" class="panel_state" data-label="开发" style="visibility: hidden;">
+          <div id="u219_state2_content" class="panel_state_content">
+
+            <!-- Unnamed (下拉列表框) -->
+            <div id="u222" class="ax_default droplist">
+              <select id="u222_input">
+                <option value="html5">html5</option>
+                <option value="ios">ios</option>
+                <option value="安卓">安卓</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="u219_state3" class="panel_state" data-label="测试" style="visibility: hidden;">
+          <div id="u219_state3_content" class="panel_state_content">
+
+            <!-- Unnamed (下拉列表框) -->
+            <div id="u223" class="ax_default droplist">
+              <select id="u223_input">
+                <option value="性能测试">性能测试</option>
+                <option value="黑盒测试">黑盒测试</option>
+                <option value="百盒测试">百盒测试</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
